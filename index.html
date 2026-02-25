@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosko Email Templates - Galería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Brand Colors */
+            --primary-color: #EB6F79;
+            --primary-hover: #d35c67;
+            --secondary-color: #A1D7E8;
+            --dark-color: #2B273B;
+            --light-color: #FFFFFF;
+
+            /* Theme overrides */
+            --bg-color: #f8f9fa;
+            --card-bg: #FFFFFF;
+            --text-main: #2B273B;
+            --text-muted: #5b5b5b;
+            --border-color: #e5e5e5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+        }
+
+        h1 span {
+            color: var(--primary-color);
+        }
+
+        p.subtitle {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(43, 39, 59, 0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(43, 39, 59, 0.1), 0 10px 10px -5px rgba(43, 39, 59, 0.04);
+            border-color: var(--secondary-color);
+        }
+
+        .card-preview {
+            height: 200px;
+            background-color: #f4f4f4;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Representación visual abstracta de los templates (actualizada a la paleta) */
+        .preview-content {
+            width: 80%;
+            height: 80%;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(43, 39, 59, 0.1);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* Abstract Hero */
+        .hero-preview .header {
+            height: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+            border-radius: 2px;
+        }
+
+        .hero-preview .hero-img {
+            height: 60px;
+            background: #e0e0e0;
+            border-radius: 4px;
+        }
+
+        .hero-preview .text {
+            height: 8px;
+            background: #f0f0f0;
+            border-radius: 2px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .hero-preview .btn {
+            height: 12px;
+            background: var(--primary-color);
+            border-radius: 10px;
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        /* Abstract Two Columns */
+        .two-cols-preview .header {
+            height: 15px;
+            background: var(--dark-color);
+            border-radius: 2px;
+        }
+
+        .two-cols-preview .content {
+            display: flex;
+            gap: 8px;
+            height: 80px;
+        }
+
+        .two-cols-preview .col-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .two-cols-preview .col-right {
+            flex: 1;
+            background: #e0e0e0;
+            border-radius: 4px;
+        }
+
+        .two-cols-preview .line {
+            height: 6px;
+            background: #f0f0f0;
+            border-radius: 2px;
+        }
+
+        .two-cols-preview .line.dark {
+            background: var(--dark-color)
+        }
+
+        .two-cols-preview .btn {
+            height: 10px;
+            background: var(--primary-color);
+            border-radius: 10px;
+            width: 60%;
+        }
+
+        /* Abstract Promotion */
+        .promo-preview .header {
+            height: 15px;
+            background: white;
+            text-align: center;
+        }
+
+        .promo-preview .title {
+            height: 12px;
+            background: var(--dark-color);
+            border-radius: 2px;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .promo-preview .subtitle {
+            height: 8px;
+            background: var(--secondary-color);
+            border-radius: 2px;
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        .promo-preview .hero-img {
+            height: 50px;
+            background: #e0e0e0;
+            border-radius: 4px;
+        }
+
+        .promo-preview .btn {
+            height: 15px;
+            background: var(--dark-color);
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        /* Abstract Grid */
+        .grid-preview .header {
+            height: 12px;
+            background: var(--dark-color);
+            border-radius: 2px;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .grid-preview .grid-wrap {
+            display: flex;
+            gap: 8px;
+            height: 90px;
+        }
+
+        .grid-preview .grid-item {
+            flex: 1;
+            background: #fafafa;
+            border: 1px solid #f0f0f0;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            gap: 4px;
+        }
+
+        .grid-preview .item-img {
+            height: 35px;
+            background: #e0e0e0;
+            border-radius: 2px;
+        }
+
+        .grid-preview .line {
+            height: 4px;
+            background: #f0f0f0;
+            border-radius: 2px;
+        }
+
+        .grid-preview .line.price {
+            background: var(--primary-color);
+        }
+
+        .grid-preview .btn {
+            height: 8px;
+            background: var(--dark-color);
+            border-radius: 2px;
+            margin-top: auto;
+        }
+
+
+        .card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--dark-color);
+            background: var(--secondary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            display: inline-block;
+            margin-bottom: 0.75rem;
+            width: fit-content;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .card-desc {
+            font-size: 0.9375rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-action {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: auto;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+        }
+
+        .view-btn {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.2s;
+        }
+
+        .card:hover .view-btn {
+            color: var(--primary-hover);
+        }
+
+        .view-btn svg {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover .view-btn svg {
+            transform: translateX(4px);
+        }
+
+        .template-badge {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            background: #f0f0f0;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><span>Kiosko</span> Email Templates</h1>
+        <p class="subtitle">Galería de plantillas HTML para campañas de E-commerce. Compatibles y responsive.</p>
+    </header>
+
+    <main class="grid-container">
+
+        <!-- Template 1 -->
+        <a href="template-1-hero.html" class="card" target="_blank">
+            <div class="card-preview">
+                <div class="preview-content hero-preview">
+                    <div class="header"></div>
+                    <div class="hero-img"></div>
+                    <div class="text"></div>
+                    <div class="text" style="width: 60%;"></div>
+                    <div class="btn"></div>
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="card-tag">Lanzamientos</span>
+                <h2 class="card-title">Hero Clásico</h2>
+                <p class="card-desc">Diseño tradicional con una imagen principal expansiva, texto centralizado y un
+                    llamado a la acción destacado. Ideal para nuevas colecciones.</p>
+
+                <div class="card-action">
+                    <span class="view-btn">
+                        Ver template
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span class="template-badge">.html</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Template 2 -->
+        <a href="template-2-two-columns.html" class="card" target="_blank">
+            <div class="card-preview">
+                <div class="preview-content two-cols-preview">
+                    <div class="header"></div>
+                    <div class="content">
+                        <div class="col-left">
+                            <div class="line dark" style="width: 90%;"></div>
+                            <div class="line" style="width: 100%;"></div>
+                            <div class="line" style="width: 80%;"></div>
+                            <div class="btn" style="margin-top: 5px;"></div>
+                        </div>
+                        <div class="col-right"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="card-tag" style="background: var(--primary-color); color: white;">Destacados</span>
+                <h2 class="card-title">Dos Columnas Estilo Z</h2>
+                <p class="card-desc">Estructura dinámica con texto a la izquierda e imagen a la derecha que se apilan
+                    perfectamente en dispositivos móviles.</p>
+
+                <div class="card-action">
+                    <span class="view-btn">
+                        Ver template
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span class="template-badge">.html</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Template 3 -->
+        <a href="template-3-product.html" class="card" target="_blank">
+            <div class="card-preview">
+                <div class="preview-content promo-preview">
+                    <div class="title"></div>
+                    <div class="subtitle"></div>
+                    <div class="hero-img" style="margin: 4px 0;"></div>
+                    <div class="btn"></div>
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="card-tag"
+                    style="background: var(--dark-color); color: var(--secondary-color);">Promoción</span>
+                <h2 class="card-title">Flash Sale / Urgencia</h2>
+                <p class="card-desc">Diseño de alto impacto visual enfocado en conversiones rápidas. Títulos grandes,
+                    imagen imponente y un botón CTA de ancho completo.</p>
+
+                <div class="card-action">
+                    <span class="view-btn">
+                        Ver template
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span class="template-badge">.html</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Template 4 -->
+        <a href="template-4-grid.html" class="card" target="_blank">
+            <div class="card-preview">
+                <div class="preview-content grid-preview">
+                    <div class="header"></div>
+                    <div class="grid-wrap">
+                        <div class="grid-item">
+                            <div class="item-img"></div>
+                            <div class="line dark" style="width: 80%;"></div>
+                            <div class="line price" style="width: 40%;"></div>
+                            <div class="btn"></div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="item-img"></div>
+                            <div class="line dark" style="width: 90%;"></div>
+                            <div class="line price" style="width: 50%;"></div>
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="card-tag">Catálogo</span>
+                <h2 class="card-title">Grid de Productos</h2>
+                <p class="card-desc">Cuadrícula dividida para mostrar múltiples productos a la vez. Excelente para
+                    sugerencias, carritos abandonados o cross-selling.</p>
+
+                <div class="card-action">
+                    <span class="view-btn">
+                        Ver template
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </span>
+                    <span class="template-badge">.html</span>
+                </div>
+            </div>
+        </a>
+
+    </main>
+
+</body>
+
+</html>
