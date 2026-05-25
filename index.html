@@ -352,6 +352,138 @@
             font-weight: 600;
         }
 
+        /* ── Emails Section ── */
+        .section-divider {
+            width: 100%;
+            max-width: 1200px;
+            margin: 3rem 0 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-divider-line {
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+
+        .section-heading {
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 2rem;
+        }
+
+        .section-heading h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--dark-color);
+            letter-spacing: -0.02em;
+        }
+
+        .section-heading p {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        /* Month tabs */
+        .month-tabs {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .month-tab {
+            font-size: 0.8125rem;
+            font-weight: 700;
+            padding: 0.4rem 1rem;
+            border-radius: 9999px;
+            border: 1.5px solid var(--border-color);
+            background: white;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .month-tab.active,
+        .month-tab:hover {
+            background: var(--dark-color);
+            color: white;
+            border-color: var(--dark-color);
+        }
+
+        /* Month panel */
+        .month-panel {
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .month-panel-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .month-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: white;
+            background: var(--dark-color);
+            padding: 0.3rem 0.9rem;
+            border-radius: 9999px;
+        }
+
+        .month-count {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        /* Empty state */
+        .empty-month {
+            width: 100%;
+            border: 2px dashed var(--border-color);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        .empty-month svg {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 1rem;
+            opacity: 0.35;
+        }
+
+        .empty-month p {
+            font-size: 0.9375rem;
+        }
+
+        .empty-month span {
+            font-size: 0.8125rem;
+            font-family: monospace;
+            background: #f0f0f0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
@@ -535,6 +667,118 @@
         </a>
 
     </main>
+
+    <!-- ── Emails por mes ── -->
+    <div class="section-divider">
+        <div class="section-divider-line"></div>
+        <span class="section-label">Envíos</span>
+        <div class="section-divider-line"></div>
+    </div>
+
+    <div class="section-heading">
+        <h2>Emails por Mes</h2>
+        <p>Correos HTML producidos cada mes para las campañas de Kiosko.</p>
+    </div>
+
+    <div class="month-tabs">
+        <a href="#mayo-2026" class="month-tab active">Mayo 2026</a>
+    </div>
+
+    <!-- Mayo 2026 -->
+    <div class="month-panel" id="mayo-2026">
+        <div class="month-panel-header">
+            <span class="month-badge">Mayo 2026</span>
+            <span class="month-count">4 emails</span>
+        </div>
+
+        <div class="grid-container">
+
+            <!-- Email 01 -->
+            <a href="emails/mayo-2026/email-01-galeria-fotos.html" class="card" target="_blank">
+                <div class="card-preview" style="padding:0;">
+                    <img src="assets/emails/mayo-2026/Banner01.jpg" alt="Email 01" style="width:100%;height:100%;object-fit:cover;display:block;" />
+                </div>
+                <div class="card-body">
+                    <span class="card-tag" style="background: var(--dark-color); color: var(--secondary-color);">Mayo 2026</span>
+                    <h2 class="card-title">Tu galería tiene +7482 fotos. Cero impresas.</h2>
+                    <p class="card-desc">Email de apertura de campaña. Hero + 3 pasos del proceso + CTA WhatsApp. Oferta Box XL a 29,75€.</p>
+                    <div class="card-action">
+                        <span class="view-btn">
+                            Ver email
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                        <span class="template-badge">.html</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Email 02 -->
+            <a href="emails/mayo-2026/email-02-regalo-sin-cajon.html" class="card" target="_blank">
+                <div class="card-preview" style="padding:0;">
+                    <img src="assets/emails/mayo-2026/Banner02.jpg" alt="Email 02" style="width:100%;height:100%;object-fit:cover;display:block;" />
+                </div>
+                <div class="card-body">
+                    <span class="card-tag" style="background: var(--dark-color); color: var(--secondary-color);">Mayo 2026</span>
+                    <h2 class="card-title">Un regalo desde 16€ que no acaba en un cajón.</h2>
+                    <p class="card-desc">Email de regalos con tarjetas de los 4 productos (Box S, XL, 500 y Madera) con precios -15% y CTA a la web.</p>
+                    <div class="card-action">
+                        <span class="view-btn">
+                            Ver email
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                        <span class="template-badge">.html</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Email 03 -->
+            <a href="emails/mayo-2026/email-03-audio-fotos.html" class="card" target="_blank">
+                <div class="card-preview" style="padding:0;">
+                    <img src="assets/emails/mayo-2026/Banner03.jpg" alt="Email 03" style="width:100%;height:100%;object-fit:cover;display:block;" />
+                </div>
+                <div class="card-body">
+                    <span class="card-tag" style="background: var(--dark-color); color: var(--secondary-color);">Mayo 2026</span>
+                    <h2 class="card-title">Si sabes mandar un audio, sabes imprimir 300 fotos.</h2>
+                    <p class="card-desc">Email educacional. 4 pasos del proceso de pedido + recordatorio del -15% + CTA WhatsApp.</p>
+                    <div class="card-action">
+                        <span class="view-btn">
+                            Ver email
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                        <span class="template-badge">.html</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Email 04 -->
+            <a href="emails/mayo-2026/email-04-mayo-se-va.html" class="card" target="_blank">
+                <div class="card-preview" style="padding:0;">
+                    <img src="assets/emails/mayo-2026/Banner04.jpg" alt="Email 04" style="width:100%;height:100%;object-fit:cover;display:block;" />
+                </div>
+                <div class="card-body">
+                    <span class="card-tag" style="background: var(--dark-color); color: var(--secondary-color);">Mayo 2026</span>
+                    <h2 class="card-title">Mayo se va. Tus fotos pueden quedarse.</h2>
+                    <p class="card-desc">Email de cierre y urgencia. Tarjetas de los 4 productos con botón de acción rojo + CTA principal a la web.</p>
+                    <div class="card-action">
+                        <span class="view-btn">
+                            Ver email
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                        <span class="template-badge">.html</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
 
 </body>
 
