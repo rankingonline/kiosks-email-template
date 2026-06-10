@@ -417,13 +417,26 @@
             cursor: pointer;
             transition: all 0.2s;
             text-decoration: none;
+            opacity: 1;
         }
 
-        .month-tab.active,
-        .month-tab:hover {
+        .month-tab.active {
             background: var(--dark-color);
             color: white;
             border-color: var(--dark-color);
+        }
+
+        .month-tab:not(.active):hover {
+            border-color: var(--dark-color);
+            color: var(--dark-color);
+        }
+
+        .month-panel {
+            display: none;
+        }
+
+        .month-panel.active {
+            display: block;
         }
 
         /* Month panel */
@@ -681,7 +694,104 @@
     </div>
 
     <div class="month-tabs">
-        <a href="#mayo-2026" class="month-tab active">Mayo 2026</a>
+        <button class="month-tab active" data-target="junio-2026">Junio 2026</button>
+        <button class="month-tab" data-target="mayo-2026">Mayo 2026</button>
+    </div>
+
+    <!-- Junio 2026 -->
+    <div class="month-panel active" id="junio-2026">
+        <div class="month-panel-header">
+            <span class="month-badge">Junio 2026</span>
+            <span class="month-count">4 emails</span>
+        </div>
+
+        <div class="grid-container">
+
+            <!-- Email 01 -->
+            <a href="emails/june-2026/email-01-envio-gratis.html" class="card" target="_blank">
+                <div class="card-preview" style="padding:0;">
+                    <img src="assets/emails/june-2026/1.png" alt="Email 01 Junio" style="width:100%;height:100%;object-fit:cover;display:block;" />
+                </div>
+                <div class="card-body">
+                    <span class="card-tag" style="background: var(--dark-color); color: var(--secondary-color);">Junio 2026</span>
+                    <h2 class="card-title">Tu pedido de fotos: sin coste de envío 🎁</h2>
+                    <p class="card-desc">Apertura de campaña. Envío gratis del 10 al 17 de junio. Tabla de productos + CTA WhatsApp.</p>
+                    <div class="card-action">
+                        <span class="view-btn">
+                            Ver email
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                        <span class="template-badge">.html</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Email 04 -->
+            <a href="emails/june-2026/email-04-cierre-urgencia.html" class="card" target="_blank">
+                <div class="card-preview" style="padding:0;">
+                    <img src="assets/emails/june-2026/4.png" alt="Email 04 Junio" style="width:100%;height:100%;object-fit:cover;display:block;" />
+                </div>
+                <div class="card-body">
+                    <span class="card-tag" style="background: var(--dark-color); color: var(--secondary-color);">Junio 2026</span>
+                    <h2 class="card-title">Hoy es el último día: envío gratis</h2>
+                    <p class="card-desc">Cierre y urgencia. Callout último día + grid 2×2 de productos con botón individual por caja + CTA general.</p>
+                    <div class="card-action">
+                        <span class="view-btn">
+                            Ver email
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                        <span class="template-badge">.html</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Email 03 -->
+            <a href="emails/june-2026/email-03-educacional-proceso.html" class="card" target="_blank">
+                <div class="card-preview" style="padding:0;">
+                    <img src="assets/emails/june-2026/3.png" alt="Email 03 Junio" style="width:100%;height:100%;object-fit:cover;display:block;" />
+                </div>
+                <div class="card-body">
+                    <span class="card-tag" style="background: var(--dark-color); color: var(--secondary-color);">Junio 2026</span>
+                    <h2 class="card-title">¿Cuánto tardas en mandar fotos por WhatsApp?</h2>
+                    <p class="card-desc">Educacional / proceso. 3 pasos con título + descripción + callout de promo + CTA WhatsApp.</p>
+                    <div class="card-action">
+                        <span class="view-btn">
+                            Ver email
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                        <span class="template-badge">.html</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Email 02 -->
+            <a href="emails/june-2026/email-02-mitad-campana.html" class="card" target="_blank">
+                <div class="card-preview" style="padding:0;">
+                    <img src="assets/emails/june-2026/2.png" alt="Email 02 Junio" style="width:100%;height:100%;object-fit:cover;display:block;" />
+                </div>
+                <div class="card-body">
+                    <span class="card-tag" style="background: var(--dark-color); color: var(--secondary-color);">Junio 2026</span>
+                    <h2 class="card-title">Envío gratis + fotos desde 19 € = no hay excusa</h2>
+                    <p class="card-desc">Mitad de campaña. Copy emocional + 3 pasos del proceso + CTA WhatsApp. Urgencia media.</p>
+                    <div class="card-action">
+                        <span class="view-btn">
+                            Ver email
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                        <span class="template-badge">.html</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
     </div>
 
     <!-- Mayo 2026 -->
@@ -779,6 +889,24 @@
 
         </div>
     </div>
+
+    <script>
+        document.querySelectorAll('.month-tab').forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                var targetId = this.dataset.target;
+
+                document.querySelectorAll('.month-tab').forEach(function(t) {
+                    t.classList.remove('active');
+                });
+                document.querySelectorAll('.month-panel').forEach(function(p) {
+                    p.classList.remove('active');
+                });
+
+                this.classList.add('active');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
 
 </body>
 
