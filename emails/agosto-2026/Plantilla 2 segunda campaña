@@ -1,0 +1,188 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><style class="zccustomstyles" type="text/css">.ze_body{font-family:Verdana,arial,Helvetica,sans-serif;font-size:13px;} table{font-size:100%}</style></head><body style="margin:0 !important;padding:0 !important;background-color:#f4f4f4;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;" class="ze_body"><div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Se acaba el 2 de septiembre. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌</div>
+    
+    
+    <style type="text/css">
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+        table { border-collapse: collapse !important; }
+        @media screen and (max-width: 600px) {
+            .main-content-table { width: 100% !important; }
+            .mobile-stack { display: block !important; width: 100% !important; box-sizing: border-box !important; padding: 0 !important; padding-bottom: 12px !important; }
+            .hide-mobile { display: none !important; }
+            .product-cell { display: block !important; width: 100% !important; padding: 0 0 12px !important; }
+        }
+    </style>
+
+
+
+    <center>
+        <table width="100%" style="border-collapse: collapse !important; -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;background-color:#f4f4f4;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+                <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:40px 10px;" align="center">
+                    
+                    <table width="100%" style="border-collapse: collapse !important; -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;max-width:600px;margin:0 auto;background-color:#FFFFFF;border-radius:8px;overflow:hidden;box-shadow:0 4px 6px rgba(0,0,0,0.08);" role="presentation" class="main-content-table" cellspacing="0" cellpadding="0" border="0">
+
+                        <!-- HEADER -->
+                        <tbody><tr>
+                            <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:25px 30px;background-color:#2B273B;border-bottom:3px solid #EB6F79;" align="center">
+                                <img width="180" style=" outline: none; text-decoration: none;-ms-interpolation-mode: bicubic;display:block;width:100%;max-width:180px;height:auto;border:0;" src="https://stratus.campaign-image.eu/images/1787660445237_3872_logolight_zc_v1_57344000024186015.png" class="" alt="Kiosko Box">
+                            </td>
+                        </tr>
+
+                        <!-- HERO IMAGE -->
+                        <tr>
+                            <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:0;font-size:0;line-height:0;" align="center">
+                                <img width="600" style=" outline: none; text-decoration: none;-ms-interpolation-mode: bicubic;display:block;width:100%;max-width:600px;height:auto;border:0;" src="https://stratus.campaign-image.eu/images/1787660446041_3872_b0220mitad20de20campancc8_zc_v1_57344000024186015.png" class="" alt="A mitad de semana, tu caja sigue con -20%">
+                            </td>
+                        </tr>
+
+                        <!-- TITULAR + SUBTÍTULO -->
+                        <tr>
+                            <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:36px 35px 10px;" align="center">
+                                <h1 style="margin:0 0 10px;font-family:'Poppins',Arial,sans-serif;font-size:26px;color:#2B273B;font-weight:700;line-height:1.3;">A mitad de semana, tu caja sigue con -20%.</h1>
+                                <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:16px;color:#EB6F79;font-weight:600;line-height:1.4;">Se acaba el 2 de septiembre.</p>
+                            </td>
+                        </tr>
+
+                        <!-- CUERPO -->
+                        <tr>
+                            <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:24px 35px 10px;">
+                                <p style="margin:0 0 14px;font-family:'Poppins',Arial,sans-serif;font-size:16px;color:#555555;line-height:1.7;">Hola, <strong>{{ nombre }}</strong>.</p>
+                                <p style="margin:0 0 14px;font-family:'Poppins',Arial,sans-serif;font-size:16px;color:#555555;line-height:1.7;">Si todavía no has pedido tu caja de fotos de este verano, esto es un recordatorio con fecha límite.</p>
+                                <p style="margin:0 0 14px;font-family:'Poppins',Arial,sans-serif;font-size:16px;color:#555555;line-height:1.7;">Quedan pocos días de <strong>-20%</strong> en todas las cajas KioskoBox. Sin mínimo de compra.</p>
+                                <p style="margin:0 0 24px;font-family:'Poppins',Arial,sans-serif;font-size:16px;color:#555555;line-height:1.7;">Elige la que más se ajuste a tu verano:</p>
+
+                                <!-- GRID DE PRODUCTOS (2 arriba / 2 abajo) -->
+                                <table width="100%" style="border-collapse: collapse !important; -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;margin-bottom:6px;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                        <!-- Box S -->
+                                        <td width="50%" valign="top" style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:0 6px 12px 0;" class="product-cell">
+                                            <table width="100%" style="border-collapse: collapse !important; -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;border:1px solid #ECECEC;border-radius:8px;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                                <tbody><tr>
+                                                    <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:18px 16px 0;" align="center">
+                                                        <img width="130" style=" outline: none; text-decoration: none;-ms-interpolation-mode: bicubic;display:block;width:130px;height:130px;max-width:100%;object-fit:cover;border-radius:6px;border:0;" src="https://stratus.campaign-image.eu/images/1787660446578_3872_boxs_zc_v1_57344000024186015.webp" height="130" alt="Box S KioskoBox">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:12px 14px 18px;" align="center">
+                                                        <p style="margin:0 0 2px;font-family:'Poppins',Arial,sans-serif;font-size:15px;color:#2B273B;font-weight:700;">Box S</p>
+                                                        <p style="margin:0 0 8px;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#999999;">Hasta 50 fotos</p>
+                                                        <p style="margin:0;font-family:'Poppins',Arial,sans-serif;">
+                                                            <span style="font-size:13px;color:#999999;text-decoration:line-through;">19 €</span>
+                                                              
+                                                            <span style="font-size:17px;color:#EB6F79;font-weight:700;">15,20 €</span>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                        <!-- Box XL -->
+                                        <td width="50%" valign="top" style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:0 0 12px 6px;" class="product-cell">
+                                            <table width="100%" style="border-collapse: collapse !important; -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;border:1px solid #ECECEC;border-radius:8px;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                                <tbody><tr>
+                                                    <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:18px 16px 0;" align="center">
+                                                        <img width="130" style=" outline: none; text-decoration: none;-ms-interpolation-mode: bicubic;display:block;width:130px;height:130px;max-width:100%;object-fit:cover;border-radius:6px;border:0;" src="https://stratus.campaign-image.eu/images/1787660446984_3872_boxxl_zc_v1_57344000024186015.webp" height="130" alt="Box XL KioskoBox">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:12px 14px 18px;" align="center">
+                                                        <p style="margin:0 0 2px;font-family:'Poppins',Arial,sans-serif;font-size:15px;color:#2B273B;font-weight:700;">Box XL</p>
+                                                        <p style="margin:0 0 8px;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#999999;">Hasta 300 fotos</p>
+                                                        <p style="margin:0;font-family:'Poppins',Arial,sans-serif;">
+                                                            <span style="font-size:13px;color:#999999;text-decoration:line-through;">35 €</span>
+                                                              
+                                                            <span style="font-size:17px;color:#EB6F79;font-weight:700;">28 €</span>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Box 500 -->
+                                        <td width="50%" valign="top" style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:0 6px 0 0;" class="product-cell">
+                                            <table width="100%" style="border-collapse: collapse !important; -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;border:1px solid #ECECEC;border-radius:8px;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                                <tbody><tr>
+                                                    <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:18px 16px 0;" align="center">
+                                                        <img width="130" style=" outline: none; text-decoration: none;-ms-interpolation-mode: bicubic;display:block;width:130px;height:130px;max-width:100%;object-fit:cover;border-radius:6px;border:0;" src="https://stratus.campaign-image.eu/images/1787660447403_3872_box500_zc_v1_57344000024186015.webp" height="130" class="" alt="Box 500 KioskoBox">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:12px 14px 18px;" align="center">
+                                                        <p style="margin:0 0 2px;font-family:'Poppins',Arial,sans-serif;font-size:15px;color:#2B273B;font-weight:700;">Box 500</p>
+                                                        <p style="margin:0 0 8px;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#999999;">Hasta 500 fotos</p>
+                                                        <p style="margin:0;font-family:'Poppins',Arial,sans-serif;">
+                                                            <span style="font-size:13px;color:#999999;text-decoration:line-through;">55 €</span>
+                                                              
+                                                            <span style="font-size:17px;color:#EB6F79;font-weight:700;">44 €</span>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                        <!-- Box Madera PREMIUM -->
+                                        <td width="50%" valign="top" style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:0 0 0 6px;" class="product-cell">
+                                            <table width="100%" style="border-collapse: collapse !important; -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;border:1px solid #ECECEC;border-radius:8px;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                                <tbody><tr>
+                                                    <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:18px 16px 0;" align="center">
+                                                        <img width="130" style=" outline: none; text-decoration: none;-ms-interpolation-mode: bicubic;display:block;width:130px;height:130px;max-width:100%;object-fit:cover;border-radius:6px;border:0;" src="https://stratus.campaign-image.eu/images/1787660447792_3872_boxmadera_zc_v1_57344000024186015.webp" height="130" class="" alt="Box Madera PREMIUM KioskoBox">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:12px 14px 18px;" align="center">
+                                                        <p style="margin:0 0 2px;font-family:'Poppins',Arial,sans-serif;font-size:15px;color:#2B273B;font-weight:700;">Box Madera PREMIUM</p>
+                                                        <p style="margin:0 0 8px;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#999999;">Hasta 1.200 fotos</p>
+                                                        <p style="margin:0;font-family:'Poppins',Arial,sans-serif;">
+                                                            <span style="font-size:13px;color:#999999;text-decoration:line-through;">159 €</span>
+                                                              
+                                                            <span style="font-size:17px;color:#EB6F79;font-weight:700;">127,20 €</span>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+
+                                <p style="margin:18px 0 0;font-family:'Poppins',Arial,sans-serif;font-size:16px;color:#555555;line-height:1.7;">Nos mandas las fotos por WhatsApp, tal cual están en tu móvil. Nosotros hacemos el resto.</p>
+                            </td>
+                        </tr>
+
+                        <!-- CIERRE + CTA -->
+                        <tr>
+                            <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:10px 35px 35px;" align="center">
+                                <table style="border-collapse: collapse !important; -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;margin:0 auto 18px;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                        <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;border-radius:25px;background-color:#25D366;" align="center">
+                                            <a target="_blank" style=" -ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family:'Poppins',Arial,sans-serif;font-size:16px;color:#ffffff;text-decoration:none;border-radius:25px;padding:14px 30px;display:inline-block;font-weight:700;" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=34655266366&text=Toc%2C%20toc!%20Hola%20Kiosk%C3%B6!%F0%9F%91%8B">Seguir con el -20% →</a>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+
+                                <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:13px;color:#999999;font-weight:600;line-height:1.5;">Más de 1.000 reseñas y +30 millones de fotos impresas. Esta semana, con descuento.</p>
+                            </td>
+                        </tr>
+
+                        <!-- FOOTER -->
+                        <tr>
+                            <td style=" -ms-text-size-adjust: 100%; mso-table-rspace: 0pt;mso-table-lspace: 0pt;-webkit-text-size-adjust: 100%;padding:22px 30px;background-color:#2B273B;" align="center">
+                                <p style="margin:0 0 8px;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#A1D7E8;">Kiosko Box — Imprime en segundos</p>
+                                <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#A1D7E8;"><a style=" -ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color:#FFFFFF;text-decoration:underline;font-weight:600;" href="#">Ajustes de suscripción</a></p>
+                            </td>
+                        </tr>
+
+                    </tbody></table>
+                    
+                </td>
+            </tr>
+        </tbody></table>
+    </center>
+
+
+</body>
